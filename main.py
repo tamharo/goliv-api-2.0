@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def say_hello():
-    return "Goliv API v1.0.5"
+    return "Goliv API v1.0.7"
 
 
 if __name__ == '__main__':
