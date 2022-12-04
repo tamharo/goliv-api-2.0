@@ -1,16 +1,10 @@
 from flask import Flask
 app = Flask(__name__)
 
-from sorter import sorter
-
-@app.route('/sorter', methods=['GET'])
-def api_sorter():
-    return sorter()
-
 
 @app.route('/', methods=['GET'])
 def say_hello():
-    return "Goliv API v.1.0.3"
+    return "Goliv API v1.0.5"
 
 
 if __name__ == '__main__':
