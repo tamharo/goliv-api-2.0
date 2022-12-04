@@ -4,8 +4,6 @@ import vaex
 
 app = Flask(__name__)
 
-dv = vaex.open(r'db/db-road-fr.hdf5')
-
 @app.route('/sorter', methods=['GET'])
 def api_sorter():
     return sorter()
