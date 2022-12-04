@@ -15,13 +15,13 @@
 set -ex
 
 # [START getting_started_gce_create_instance]
-MY_INSTANCE_NAME="my-app-instance"
-ZONE=us-central1-a
+MY_INSTANCE_NAME="manhamprod"
+ZONE=europe-west1-b
 
 gcloud compute instances create $MY_INSTANCE_NAME \
     --image-family=debian-10 \
     --image-project=debian-cloud \
-    --machine-type=g1-small \
+    --machine-type=n2-highmem-4 \
     --scopes userinfo-email,cloud-platform \
     --metadata-from-file startup-script=startup-script.sh \
     --zone $ZONE \
