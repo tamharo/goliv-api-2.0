@@ -1,6 +1,5 @@
 from flask import Flask, request
 from sorter import sorter
-import vaex
 
 app = Flask(__name__)
 
