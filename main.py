@@ -1,10 +1,18 @@
-from flask import Flask
+from flask import Flask, request
+from sorter import sorter
+import vaex
+
 app = Flask(__name__)
 
+dv = vaex.open(r'db/db-road-fr.hdf5')
+
+@app.route('/sorter', methods=['GET'])
+def api_sorter():
+    return sorter()
 
 @app.route('/', methods=['GET'])
 def say_hello():
-    return "Goliv API v1.0.8"
+    return "Goliv API v1.0.9"
 
 
 if __name__ == '__main__':
