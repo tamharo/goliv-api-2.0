@@ -1,5 +1,4 @@
 config.txt
 .DS_Store
-co.sh
-restart.sh
 test/
+*.sh
