@@ -6,7 +6,7 @@ pip install --upgrade pip virtualenv
 
 
 export HOME=/root
-git clone https://github.com/GoogleCloudPlatform/getting-started-python.git /opt/app
+git clone https://github.com/tamharo/goliv-api-2.0.git /opt/app/goliv
 
 useradd -m -d /home/pythonapp pythonapp
 
